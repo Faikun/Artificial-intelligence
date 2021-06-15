@@ -1,0 +1,41 @@
+@import "vars";
+@import "vendor/reset";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $black-col;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    color: $white;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+/* Blocks */
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/burger";
+@import "blocks/btn";
+@import "blocks/hero";
+@import "blocks/about";
+@import "blocks/slider";
+@import "blocks/blog";
+@import "blocks/footer";
+

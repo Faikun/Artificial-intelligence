@@ -1,0 +1,36 @@
+.nav {
+    display: flex;
+    margin: 0 -20px;
+    width: 55%;
+
+    @media(max-width: 1100px) {
+        width: 80%;
+    }
+
+    @media(max-width: 700px) {
+        display: none;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 100%;
+        z-index: 1000;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        background-color: darken($blue, 35%);
+        text-align: center;
+        margin: 0;
+    }
+}
+
+.nav__link {
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: $white;
+
+     @media(max-width: 700px) {
+        width: 100%;
+        padding: 5px 10px;
+        position: relative;
+    }
+}

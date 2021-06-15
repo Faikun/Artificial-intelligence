@@ -1,0 +1,153 @@
+.hero {
+    background-color: #08101E;
+}
+
+.hero__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 10px;
+
+}
+
+.hero__info {
+    margin: 160px 0;
+    width: 50%;
+
+    @media(max-width: 1300px) {
+        width: 100%;
+        text-align: center;
+        padding: 0 10%;
+        margin: 80px 0;
+    }
+
+    @media(max-width: 700px) {
+        margin: 40px 0;
+    }
+}
+
+.hero__suptitle {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: $blue;
+
+    margin-bottom: 10px;
+}
+
+.hero__title {
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 1.3;
+
+    margin-bottom: 40px;
+
+    @media(max-width: 800px) {
+        font-size: 32px;
+    }
+}
+
+.hero__text {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 160%;
+    opacity: .7;
+    margin-bottom: 50px;
+    width: 87%;
+
+    @media(max-width: 1300px) {
+        width: 100%;
+        padding: 0 15%;
+    }
+
+    @media(max-width: 500px) {
+        padding: 0 5%;
+    }
+}
+
+.hero__buttons {
+    display: flex;
+    margin: 0 -10px;
+
+    @media(max-width: 1300px) {
+        justify-content: center;
+    }
+
+    @media(max-width: 500px) {
+         padding: 0 20px;
+    }
+}
+
+.hero__btn {
+    margin: 0 10px;
+
+    &:last-child {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.hero__watch {
+    margin-right: 10px;
+}
+
+.hero_img {
+    width: 50%;
+    margin: 50px 0;
+
+    @media(max-width: 1300px) {
+        width: 100%;
+    }
+
+    @media(max-width: 500px) {
+        margin: 0;
+        margin-bottom: 25px;
+    }
+}
+
+.hero__image {
+    @media(max-width: 1300px) {
+        margin: 0 auto;
+        display: block;
+    }
+
+    @media(max-width: 700px) {
+        width: 100%;
+        height: auto;
+        padding: 10px 20px;
+    }
+}
+
+.hero__logo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+
+    &-block {
+        @media(max-width: 1000px) {
+           width: 50%;
+        }
+
+        @media(max-width: 600px) {
+           width: 100%;
+        }
+    }
+
+    &-img {
+        margin-bottom: 20px;
+
+        @media(max-width: 1000px) {
+            margin: 0 auto 20px;
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    @media(max-width: 1000px) {
+        padding-bottom: 50px;
+    }
+}
